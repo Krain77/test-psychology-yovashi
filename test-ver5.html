@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Ruslan%20Ildarovich/Downloads/Test%20ver%204.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		
+		<style>
+			
+			*,
+			*::after,
+			*::before {
+				margin: 0;
+				box-sizing: border-box;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.header {
+				width: 100%;
+				height: 100px;
+				align-items: center;
+				text-align: center;
+				display: flex;
+				justify-content:space-evenly;
+				background: #8787ff;
+				color: white;
+			}
+
+			.header-title{
+				width: 80%;
+				font-weight: bold;
+				font-size: 40px;
+			}
+
+			.test-about{
+				padding: 10px;
+				width: 10%;
+				height: 40px;
+				font-size: 20px;
+				border: 1px solid;
+				border-radius: 15px;
+				transition: 0.4s;
+			}
+			
+			.test-about-invis{
+				width: 29%;
+				height: 250px;
+				padding: 15px;
+				background: #a5a5ff;
+				color: white;
+				border-radius: 25px;
+				font-size: 20px;
+				position: absolute;
+				left: 70%;
+				top: 120px;
+				display: none;
+				z-index: 10;
+			}
+			footer{
+				padding-top: 20px;
+				width: 70%;
+				height: 245px;
+				display: flex;
+				margin: 0 auto;
+				
+				
+				position: relative;
+				
+			}
+			.instruction{
+				width: 70%;
+				height: 200px;
+				font-size: 25px;
+				text-align: center;
+				margin: 0px 15%;
+			}
+			.instruction-title{
+				font-weight: bold;
+				font-size: 30px;
+				margin-bottom: 15px;
+			}
+
+			.question{
+				width: 70%;
+				height: 470px;
+				border-radius: 15px;
+				position: absolute;
+					top: 540px;
+				left: 15%;
+				box-shadow: 1px 1px 3px 1px;
+				padding: 25px;
+				border: 1px solid rgb(117, 117, 255);
+			}
+			.q-title{
+				font-weight: bold;
+				font-size: 35px;
+			}
+			.q-question{
+				font-size: 25px;
+				margin: 100px 40px 200px;
+			}
+
+			.buttons{
+				position: absolute;
+				right: 25px;
+				bottom: 25px;
+				height: 50px;
+				display: flex;
+			}
+
+			.but{
+				width: 150px;
+				height: 60px;
+				background: #a5a5ff;
+				border-radius: 15px;
+				margin-right: 25px;
+				text-align: center;
+				font-size: 25px;
+				padding: 15px;
+				transition: 0.2s;
+			}
+
+			
+
+			.choise{
+				position: absolute;
+				top: 250px;
+				left: 100px;
+				font-size: 20px;
+			}
+
+			.choise input{
+				margin: 10px;
+				width: 20px;
+				height: 20px;
+			}
+
+			main{
+				width: 100%;
+				height: 70vh;
+			}
+
+			#block1{
+				width: 100%;
+				height: 80vh;
+			}
+
+			#results{
+				width: 40%;
+				height: 40vh;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 30px;
+				display: none;
+			}
+
+
+			
+			.fimg{
+				width: 300px;
+				height: 175px;
+				margin: 5px;
+				background: url(https://i.ytimg.com/vi/iopHgtVxMl0/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGB8gZShKMA8=&rs=AOn4CLA21HgAIvEEWmTCV9d4R-XbBeXqoQ);
+				background-size: 105%;
+				background-repeat: no-repeat;
+				
+				
+			}
+			.fcontent{
+				font-size: 20px;
+				max-width: 70%;
+				
+
+			}
+			
+		
+			@media (max-width:1028px){
+				
+				.question {
+				width: 70%;
+				height: 510px;
+				top: 550px;
+					}
+
+				.instruction{
+					margin: 0px 15%;
+				}
+			}
+			@media (max-width:920px){
+				.header{
+					height: 187px;
+				}
+				.q-question{
+					margin: 3px;
+				}
+				.question {
+					top: 700px;
+					height: 650px;
+					}
+				.choise{
+					top: 214px;
+					left: 5px;
+					}
+				footer{
+					
+				}
+				.buttons{
+					right: -20px;
+				}
+			}
+			@media (max-width:720px){
+				.header{
+					height: 187px;
+				}
+				.instruction{
+					margin: 50px 15%;
+				}
+				.q-question{
+					margin: 3px;
+				}
+				.question {
+					top: 800px;
+					height: 650px;
+					}
+				.choise{
+					top: 214px;
+					left: 5px;
+					}
+				footer{
+					
+				}
+				.buttons{
+					right: -20px;
+				}
+			}
+		
+			@media (max-width:545px){
+				.header{
+					height: 187px;
+				}
+				.instruction{
+					margin: 70px 15%;
+				}
+				.q-question{
+					margin: 3px;
+				}
+				.question {
+					top: 850px;
+					height: 650px;
+					}
+				.choise{
+					top: 214px;
+					left: 5px;
+					}
+				footer{
+					
+				}
+				.buttons{
+					right: -20px;
+				}
+				.but{
+					width: 130px;
+				}
+			}
+			@media (max-width:490px){
+				.header{
+					height: 187px;
+				}
+				.instruction{
+					margin: 300px 15%;
+				}
+				.q-question{
+					margin: 3px;
+				}
+				.question {
+					top: 1200px;
+					height: 650px;
+					}
+				.choise{
+					top: 214px;
+					left: 5px;
+					}
+				
+			footer{
+					width: 100%;
+					margin: 0px 15%;
+					text-align: center;display: block;
+				}
+				.buttons{
+					right: -20px;
+				}
+				.but{
+					width: 130px;
+				}
+			}
+			@media (max-width:425px){
+				.header{
+					height: 187px;
+					width: 110%;
+				}
+				.header-title{
+					font-size: 25px;
+				}
+				.instruction{
+					margin: 330px 15%;
+				}
+				.q-question{
+					margin: 3px;
+				}
+				.question {
+					top: 1300px;
+					height: 650px;
+					}
+				.choise{
+					top: 214px;
+					left: 5px;
+					}
+				footer{
+					width: 100%;
+					margin: 0px 15%;
+					text-align: center;
+
+				}
+				.buttons{
+					right: -20px;
+				}
+				.but{
+					width: 130px;
+				}
+			}
+			@media (max-width:380px){
+				.header{
+					height: 187px;
+					width: 110%;
+				}
+				.header-title{
+					font-size: 25px;
+				}
+				.instruction{
+					margin: 360px 15%;
+				}
+				.q-question{
+					margin: 3px;
+				}
+				.question {
+					top: 1300px;
+					height: 650px;
+					left: 5%;
+					width: 100%;
+					}
+				.choise{
+					top: 214px;
+					left: 5px;
+					}
+				footer{
+					width: 100%;
+					margin: 0px 15%;
+					text-align: center;
+				}
+				.buttons{
+					right: -10px;
+				}
+				.but{
+					width: 120px;
+				}
+			}
+			@media (max-width:350px){
+				.header{
+					height: 187px;
+					width: 110%;
+				}
+				.header-title{
+					font-size: 25px;
+				}
+				.instruction{
+					margin: 340px 5%;
+					width: 100%;
+				}
+				.q-question{
+					margin: 3px;
+				}
+				.question {
+					top: 1200px;
+					height: 650px;
+					}
+				.choise{
+					top: 214px;
+					left: 5px;
+					}
+				footer{
+					width: 100%;
+					margin: 0px 15%;
+					text-align: center;
+				}
+				.buttons{
+					right: -5px;
+				}
+				.but{
+					width: 120px;
+				}
+
+			}
+		</style>
+		
+	</head>
+	<body>
+		<header class="header">
+			<div class="header-title">Опросник профессиональных склонностей Л.Йовайши</div>
+			<!--<div class="test-about" onclick=(test_about())>О тестировании</div>    переименовать функцию -->
+		</header>
+
+		<main class="main">
+			<div id="block1">
+				<footer>
+						<div class="fimg"></div>
+				<div class="fcontent">Вашему вниманию предоставляется тест "Определение профессиональных склонностей". 
+					Мы надеемся,что он поможет вам более точно определить ваши таланты, и подскажет какая профессия подойдет 
+					вам лучше всего. Хорошего вам прохождения</div>
+				</footer>
+				<div class="instruction">
+					<div class="instruction-title">Инструкция</div>
+					<div class="instruction-content">
+						Инструкция Вам будет предложено 24 вопроса с тремя вариантами ответов в каждом. Выберите один самый подходящий для Вас вариант ответа в каждом вопросе. Старайтесь отвечать честно, не подстраиваясь под ожидания окружающих Вас людей.
+					</div>
+				</div>
+
+				<div class="question">
+					<div class="q-title" id="qnum">Вопрос №1</div>
+					<div class="q-question" id="id_quest">Мне хотелось бы в своей профессиональной деятельности:</div>
+
+					<div class="choise">
+						<input type="radio" id="ch1" name="inputs">A) <label id="chl1" for="ch1">общаться с самыми разными людьми;</label><br>
+						<input type="radio" id="ch2" name="inputs">Б)
+						<label id="chl2" for="ch2">что-нибудь делать своими руками – мебель, одежду, машины и т.д.;</label><br>
+						<input type="radio" id="ch3" name="inputs">В)
+						<label id="chl3" for="ch3">снимать фильмы, рисовать, писать книги, выступать на сцене и т.д</label>
+					</div>
+
+					<div class="buttons">
+						<button class="but" id="button-back" onclick="(back_question())">Назад</button>
+						<button class="but" id="button-next" onclick="(next_question())">Далее</button>
+					</div>
+				</div>
+			</div>
+
+			<div id="results">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus aperiam ipsam corporis sint odio quod neque numquam! Voluptate
+				error quo excepturi distinctio temporibus eligendi deserunt vero voluptas numquam! Corporis, distinctio!
+			</div>
+		</main>
+
+		
+
+		<script>
+			var qnum = 1;
+
+			const question_list = {
+				q1: {
+					question: "Мне хотелось бы в своей профессиональной деятельности:",
+					var1: "общаться с самыми разными людьми;",
+					var2: "что-нибудь делать своими руками – мебель, одежду, машины и т.д.;",
+					var3: "что-нибудь делать своими руками – мебель, одежду, машины и т.д.;",
+					answer: 0,
+				},
+				q2: {
+					question: "В книге или кинофильме меня больше всего привлекает:",
+					var1: "художественная форма, мастерство писателя или режиссера;",
+					var2: "сюжет, действие героев;",
+					var3: "информация, которая может пригодиться в жизни.",
+					answer: 0,
+				},
+				q3: {
+					question: "Меня обрадует Нобелевская премия:",
+					var1: "в области науки;",
+					var2: "за общественную деятельность;",
+					var3: "в области искусства.",
+					answer: 0,
+				},
+				q4: {
+					question: "Я скорее соглашусь стать:",
+					var1: "управляющим банка;",
+					var2: "главным инженером на производстве;",
+					var3: "начальником экспедиции.",
+					answer: 0,
+				},
+				q5: {
+					question: "Будущее людей определяет:",
+					var1: "достижение науки;",
+					var2: "развитие производства;",
+					var3: "взаимопонимание среди людей.",
+					answer: 0,
+				},
+				q6: {
+					question: "На месте директора школы я прежде всего займусь:",
+					var1: "благоустройством школы (столовая, спортзал, компьютеры);",
+					var2: "созданием дружного, сплоченного коллектива;",
+					var3: "разработкой новых технологий обучения.",
+					answer: 0,
+				},
+				q7: {
+					question: "На технической выставке меня больше всего привлечет:",
+					var1: "внешний вид экспонатов (цвет, форма);",
+					var2: "внутреннее устройство экспонатов (механизм);",
+					var3: "практическое применение экспонатов.",
+					answer: 0,
+				},
+				q8: {
+					question: "В людях я ценю прежде всего:",
+					var1: "мужество, смелость, выносливость;",
+					var2: "дружелюбие, чуткость, отзывчивость;",
+					var3: "ответственность, аккуратность.",
+					answer: 0,
+				},
+				q9: {
+					question: " В свободное от работы время я буду:",
+					var1: "писать стихи или музыку или рисовать;",
+					var2: "ставить различные опыты;",
+					var3: "тренироваться.",
+					answer: 0,
+				},
+				q10: {
+					question: "В заграничных поездках меня больше всего привлечет:",
+					var1: "экстремальный туризм (альпинизм, виндсерфинг, горные лыжи);",
+					var2: "деловое общение;",
+					var3: "возможность знакомства с историей и культурой другой страны.",
+					answer: 0,
+				},
+				q11: {
+					question: "Мне интереснее беседовать:",
+					var1: "о машине нового типа;",
+					var2: "о новой научной теории;",
+					var3: "о человеческих взаимоотношениях",
+					answer: 0,
+				},
+				q12: {
+					question: "Если бы в моей школе было всего три кружка, я бы выбрал:",
+					var1: "технический;",
+					var2: "музыкальный;",
+					var3: "спортивный.",
+					answer: 0,
+				},
+				q13: {
+					question: "В школе больше внимания следует уделять:",
+					var1: "улучшению взаимопонимания между учителями и учениками;",
+					var2: "поддержанию здоровья учащихся, занятиям спортом;",
+					var3: " укреплению дисциплины.",
+					answer: 0,
+				},
+				q14: {
+					question: "Я с большим интересом смотрю:",
+					var1: "научно-популярные фильмы;",
+					var2: "программы о культуре и спорте;",
+					var3: "спортивные программы.",
+					answer: 0,
+				},
+				q15: {
+					question: "Мне было бы интереснее работать:",
+					var1: "с машинами, механизмами;",
+					var2: "с объектами природы;",
+					var3: "с детьми или сверстниками.",
+					answer: 0,
+				},
+				q16: {
+					question: "Школа в первую очередь должна:",
+					var1: "давать знания и умения;",
+					var2: "учить общению с другими людьми;",
+					var3: "обучать навыкам работы.",
+					answer: 0,
+				},
+				q17: {
+					question: "Каждый человек должен:",
+					var1: "вести здоровый образ жизни;",
+					var2: "иметь возможность заниматься творчеством;",
+					var3: "иметь удобные бытовые условия.",
+					answer: 0,
+				},
+				q18: {
+					question: "Для благополучия общества в первую очередь необходима:",
+					var1: "защита интересов и прав граждан;",
+					var2: "забота о материальном благополучии людей;",
+					var3: "наука и технический прогресс.",
+					answer: 0,
+				},
+				q19: {
+					question: "Мне больше всего нравятся уроки:",
+					var1: "физкультуры;",
+					var2: "математики;",
+					var3: "труда.",
+					answer: 0,
+				},
+				q20: {
+					question: "Мне интереснее было бы:",
+					var1: "планировать производство продукции;",
+					var2: "изготавливать изделия;",
+					var3: "заниматься сбытом продукции.",
+					answer: 0,
+				},
+				q21: {
+					question: " Я предпочитаю читать статьи:",
+					var1: "о выдающихся ученых и их открытиях;",
+					var2: "о творчестве ученых и музыкантов;",
+					var3: "об интересных изобретениях.",
+					answer: 0,
+				},
+				q22: {
+					question: " Свободное время я охотнее провожу:",
+					var1: "делая что-то по хозяйству;",
+					var2: "с книгой;",
+					var3: "на выставках, концертах и пр.",
+					answer: 0,
+				},
+				q23: {
+					question: " Больший интерес у меня вызовет сообщение:",
+					var1: "о художественной выставке;",
+					var2: "о ситуации на фондовой бирже;",
+					var3: "о научном открытии.",
+					answer: 0,
+				},
+				q24: {
+					question: "Я предпочитаю работать:",
+					var1: "в помещении, где много людей;",
+					var2: "в необычных условиях;",
+					var3: "в обычном кабинете.",
+					answer: 0,
+				},
+			};
+
+			const get_obj = (qnum) => {
+				switch (qnum) {
+					case 1:
+						object = question_list.q1;
+						break;
+					case 2:
+						object = question_list.q2;
+						break;
+					case 3:
+						object = question_list.q3;
+						break;
+					case 4:
+						object = question_list.q4;
+						break;
+					case 5:
+						object = question_list.q5;
+						break;
+					case 6:
+						object = question_list.q6;
+						break;
+					case 7:
+						object = question_list.q7;
+						break;
+					case 8:
+						object = question_list.q8;
+						break;
+					case 9:
+						object = question_list.q9;
+						break;
+					case 10:
+						object = question_list.q10;
+						break;
+					case 11:
+						object = question_list.q11;
+						break;
+					case 12:
+						object = question_list.q12;
+						break;
+					case 13:
+						object = question_list.q13;
+						break;
+					case 14:
+						object = question_list.q14;
+						break;
+					case 15:
+						object = question_list.q15;
+						break;
+					case 16:
+						object = question_list.q16;
+						break;
+					case 17:
+						object = question_list.q17;
+						break;
+					case 18:
+						object = question_list.q18;
+						break;
+					case 19:
+						object = question_list.q19;
+						break;
+					case 20:
+						object = question_list.q20;
+						break;
+					case 21:
+						object = question_list.q21;
+						break;
+					case 22:
+						object = question_list.q22;
+						break;
+					case 23:
+						object = question_list.q23;
+						break;
+					case 24:
+						object = question_list.q24;
+						break;
+				}
+				return object;
+			};
+
+
+			var about = false;
+			const test_about = () => {
+				el = document.getElementById("test-about-invisible");
+
+				if (about) {
+					about = false;
+					el.style.display = "block";
+				} else if (about == false) {
+					about = true;
+					el.style.display = "none";
+				}
+			};
+
+
+
+			const test_not_viod = () => {
+				let results = 0;
+				for (let i = 0; i < 25; i++) {
+					object = get_obj(i);
+					if (object.answer != 0) results++;
+				}
+				console.log(results)
+				if (results == 25) return true;
+				else return false;
+			};
+
+
+
+			const next_question = () => {
+				const btn = document.getElementById("button-next");
+
+				const question_ch1 = document.getElementById("ch1");
+				const question_ch2 = document.getElementById("ch2");
+				const question_ch3 = document.getElementById("ch3");
+				let answer = 0;
+
+
+				if (question_ch1.checked) answer = 1;
+				else if (question_ch2.checked) answer = 2;
+				else if (question_ch3.checked) answer = 3;
+
+
+				object = get_obj(qnum);
+				object.answer = answer;
+				console.log(object)
+
+				if (qnum < 24) {
+					qnum += 1;
+					object = get_obj(qnum);
+
+					const question_title = document.getElementById("id_quest");
+					const question_num = document.getElementById("qnum");
+
+					const question_label1 = document.getElementById("chl1");
+					const question_label2 = document.getElementById("chl2");
+					const question_label3 = document.getElementById("chl3");
+
+					question_num.textContent = `Вопрос №${qnum}`;
+					question_title.textContent = object.question;
+
+					question_label1.innerHTML = object.var1;
+					question_label2.innerHTML = object.var2;
+					question_label3.innerHTML = object.var3;
+
+					question_ch1.checked = false
+					question_ch2.checked = false
+					question_ch3.checked = false
+					
+					switch (object.answer){
+						case 1: question_ch1.checked = true; break
+						case 2: question_ch2.checked = true; break
+						case 3: question_ch3.checked = true; break
+					}
+				}
+				if (btn.textContent == "Завершить") {
+					if (test_not_viod()) {
+						console.log("YESSS")
+						result = end_results()
+
+						document.getElementById("block1").style.display = "none"
+						document.getElementById("results").style.display = "block"
+
+						document.getElementById("results").textContent = `Ваш результат - \n ${result}`
+					} else {
+						alert("Вы не ответили на все вопросы.");
+					}
+				}
+				if (qnum == 24) {
+					btn.textContent = "Завершить";
+				}
+			};
+
+			const back_question = () => {
+				const question_ch1 = document.getElementById("ch1");
+				const question_ch2 = document.getElementById("ch2");
+				const question_ch3 = document.getElementById("ch3");
+
+				let answer = 0
+
+				if (question_ch1.checked) answer = 1;
+				if (question_ch2.checked) answer = 2;
+				if (question_ch3.checked) answer = 3;
+
+				object = get_obj(qnum);
+				object.answer = answer;
+
+				if (qnum > 1) {
+					qnum -= 1;
+					object = get_obj(qnum);
+
+					const question_title = document.getElementById("id_quest");
+					const question_num = document.getElementById("qnum");
+
+					const question_label1 = document.getElementById("chl1");
+					const question_label2 = document.getElementById("chl2");
+					const question_label3 = document.getElementById("chl3");
+
+					question_title.textContent = object.question;
+					question_num.textContent = `Вопрос №${qnum}`;
+
+					question_label1.innerHTML = object.var1;
+					question_label2.innerHTML = object.var2;
+					question_label3.innerHTML = object.var3;
+
+					const btn = document.getElementById("button-next");
+					btn.textContent = "Далее";
+
+					question_ch1.checked = false
+					question_ch2.checked = false
+					question_ch3.checked = false
+					
+					switch (object.answer){
+						case 1: question_ch1.checked = true; break
+						case 2: question_ch2.checked = true; break
+						case 3: question_ch3.checked = true; break
+					}
+					// if (object.answer == 1) question_ch1
+				}
+			};
+
+
+			const end_results = () => {
+				result_list = {
+					b1: 0,
+					b2: 0,
+					b3: 0,
+					b4: 0,
+					b5: 0,
+					b6: 0
+				}
+
+				switch (question_list.q1.answer){
+					case 1: result_list.b1++; break
+					case 2:	result_list.b6++; break
+					case 3:	result_list.b4++; break
+				} switch (question_list.q2.answer){
+					case 1: result_list.b4++; break
+					case 2: result_list.b5++; break
+					case 3: result_list.b2++; break
+				} switch (question_list.q3.answer){
+					case 1: result_list.b2++; break
+					case 2: result_list.b1++; break
+					case 3: result_list.b4++; break
+				} switch (question_list.q4.answer){
+					case 1: result_list.b6++; break
+					case 2: result_list.b3++; break
+					case 3: result_list.b5++; break
+				} switch (question_list.q5.answer){
+					case 1: result_list.b2++; break
+					case 2: result_list.b3++; break
+					case 3: result_list.b1++; break
+				} switch (question_list.q6.answer){
+					case 1: result_list.b6++; break
+					case 2: result_list.b1++; break
+					case 3: result_list.b2++; break
+				} switch (question_list.q7.answer){
+					case 1: result_list.b4++; break
+					case 2: result_list.b2++; break
+					case 3: result_list.b3++; break
+				} switch (question_list.q8.answer){
+					case 1: result_list.b5++; break
+					case 2: result_list.b1++; break
+					case 3: result_list.b6++; break
+				} switch (question_list.q9.answer){
+					case 1: result_list.b4++; break
+					case 2: result_list.b2++; break
+					case 3: result_list.b5++; break
+				} switch (question_list.q10.answer){
+					case 1: result_list.b5++; break
+					case 2: result_list.b6++; break
+					case 3: result_list.b4++; break
+				} switch (question_list.q11.answer){
+					case 1: result_list.b3++; break
+					case 2: result_list.b2++; break
+					case 3: result_list.b1++; break
+				} switch (question_list.q12.answer){
+					case 1: result_list.b3++; break
+					case 2: result_list.b4++; break
+					case 3: result_list.b5++; break
+				} switch (question_list.q13.answer){
+					case 1: result_list.b1++; break
+					case 2: result_list.b5++; break
+					case 3: result_list.b6++; break
+				} switch (question_list.q14.answer){
+					case 1: result_list.b4++; break
+					case 2: result_list.b2++; break
+					case 3: result_list.b5++; break
+				} switch (question_list.q15.answer){
+					case 1: result_list.b3++; break
+					case 2: result_list.b5++; break
+					case 3: result_list.b1++; break
+				} switch (question_list.q16.answer){
+					case 1: result_list.b6++; break
+					case 2: result_list.b1++; break
+					case 3: result_list.b3++; break
+				} switch (question_list.q17.answer){
+					case 1: result_list.b5++; break
+					case 2: result_list.b4++; break
+					case 3: result_list.b6++; break
+				} switch (question_list.q18.answer){
+					case 1: result_list.b1++; break
+					case 2: result_list.b3++; break
+					case 3: result_list.b2++; break
+				} switch (question_list.q19.answer){
+					case 1: result_list.b5++; break
+					case 2: result_list.b6++; break
+					case 3: result_list.b3++; break
+				} switch (question_list.q20.answer){
+					case 1: result_list.b6++; break
+					case 2: result_list.b3++; break
+					case 3: result_list.b1++; break
+				} switch (question_list.q21.answer){
+					case 1: result_list.b2++; break
+					case 2: result_list.b4++; break
+					case 3: result_list.b3++; break
+				} switch (question_list.q22.answer){
+					case 1: result_list.b3++; break
+					case 2: result_list.b2++; break
+					case 3: result_list.b4++; break
+				} switch (question_list.q23.answer){
+					case 1: result_list.b4++; break
+					case 2: result_list.b6++; break
+					case 3: result_list.b2++; break
+				} switch (question_list.q24.answer){
+					case 1: result_list.b1++; break
+					case 2: result_list.b5++; break
+					case 3: result_list.b6++; break
+				}
+
+				let best = result_list.b1
+				if (result_list.b2 > best) best = result_list.b2
+				if (result_list.b3 > best) best = result_list.b3
+				if (result_list.b4 > best) best = result_list.b4
+				if (result_list.b5 > best) best = result_list.b5
+				if (result_list.b6 > best) best = result_list.b6
+
+				let itog = ""
+
+				if (best == result_list.b1) itog += `Склонность к работе с людьми. Профессии, связанные с обслуживанием (бытовым,
+					медицинским, информационным), управлением, воспитанием и обучением. Люди, успешные в
+					профессиях этой группы, должны уметь и любить общаться, находить общий язык с разными
+					людьми, понимать их настроение, намерения и особенности. \n\n`
+
+				if (best == result_list.b2) itog += `Склонность к исследовательской деятельности. Профессии, связанные с научной
+				работой. Кроме хорошей теоретической подготовки в определенных областях науки, людям,
+				занимающимся исследовательской деятельностью, необходимы такие качества, как
+				рациональность, независимость и оригинальность суждений, аналитический склад \n\n`
+				
+				if (best == result_list.b3) itog += `Склонность к исследовательской деятельности. Профессии, связанные с научной
+				работой. Кроме хорошей теоретической подготовки в определенных областях науки, людям,
+				занимающимся исследовательской деятельностью, необходимы такие качества, как
+				рациональность, независимость и оригинальность суждений, аналитический склад `
+
+				if (best == result_list.b4) itog += `Склонность к эстетическим видам деятельности. Профессии творческого
+				характера, связанные с изобразительной, музыкальной, литературно-художественной, актерскосценической деятельностью. Людей творческих профессий, кроме наличия специальных
+				способностей (музыкальных, литературных, актерских), отличает оригинальность мышления и
+				независимость характера, стремление к совершенству.`
+
+				if (best == result_list.b5) itog += `Склонность к экстремальным видам деятельности. Профессии, связанные с
+				занятиями спортом, путешествиями, экспедиционной работой, охранной и оперативнорозыскной деятельностью, службой в армии. Все они предъявляют особые требования к
+				физической подготовке, здоровью и морально-волевым качествам.`
+
+				if (best == result_list.b6) itog += `Склонность к планово-экономическим видам деятельности. Профессии,
+				связанные с расчетами и планированием (бухгалтер, экономист); делопроизводством, анализом и
+				преобразованием текстов (редактор, переводчик, лингвист); схематическим изображением
+				объектов (чертежник, топограф). Эти профессии требуют от человека собранности и
+				аккуратности.`
+
+				console.log(itog)
+				return itog
+			}
+		</script>
+	<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
